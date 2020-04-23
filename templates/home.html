@@ -20,19 +20,29 @@
 <body>
 
     <div class="container h-100">
-        <div class="row h-100 justify-content-center align-items-center">
+        <div class="row h-75 justify-content-center align-items-center">
             <form action="{{ url_for('home') }}" method="post" class="col-6 text-center">
                 <div class="form-group" name="search_form">
-                    <label for="resource" class="diplay-1"><h2>what would you like to recall?</h2></label>
-                    <input type="text" class="form-control text-center" name="resource" placeholder="? ? ?">
+                    <label for="resource" class="diplay-1">
+                        <h2 class="text-dark">recall <span class="text-warning">(working title)</span></h2>
+                    </label>
+                    <input type="text" class="form-control text-left" name="resource" placeholder="">
                 </div>
                 <div>
                     <button type="submit" class="btn btn-outline-dark mt-2">recall</button>
                 </div>
             </form>
         </div>
+        <div class="page-footer">
+            <div class="float-left">
+                <p class="text-dark">about</p>
+            </div>
+            <div class="float-right">
+                <p class="text-right text-dark">blog</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
     </div>
-
 </body>
 
 </html>
